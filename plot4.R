@@ -10,5 +10,6 @@ plot(datetime,hpc$Sub_metering_1,type="n",ylab = "Energy sub metering", xlab = "
 lines(datetime, hpc$Sub_metering_1,col="black")
 lines(datetime,hpc$Sub_metering_2,col="red")
 lines(datetime,hpc$Sub_metering_3,col="blue")
-##legend("left",legend = legText, lty="solid", col = c(1,2,4))
+legText<-c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3")
+legend("topright", legend = legText, lty="solid", col = c(1,2,4))
 plot(datetime,hpc$Global_reactive_power,type="l",ylab="Global_reactive_power")
